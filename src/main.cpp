@@ -14,8 +14,8 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-        // clear the window with black color
-        window.clear(sf::Color::Black);
+        
+        window.clear(sf::Color::White);
         // draw everything here...
         // window.draw(...);
         // end the current frame
