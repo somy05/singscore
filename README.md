@@ -4,4 +4,4 @@ A game written in C++ where you get points depending on how close to the song yo
 This game uses SFML and PortAudio
 
 
-THe program can be run on macOS currently using the command in compile.txt
+The program can be run on macOS currently using the command in compile.txt
