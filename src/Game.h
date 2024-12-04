@@ -2,16 +2,22 @@
 #define GAME_H
 
 #include <SFML/Graphics.hpp>
+#include "states/gameState.h"
+#include "states/playingState.h"
+#include "states/menuState.h"
+#include "states/splashState.h"
+
 
 class Game {
 public:
-    const static int SCREEN_WIDTH = 2048;
-    const static int SCREEN_HEIGHT = 1536;
+    const static int SCREEN_WIDTH = 1200;
+    const static int SCREEN_HEIGHT = 900;
     static void start();
     static void gameLoop();
     enum State {
-      uninititalised, splashScreen, menu, playing, exiting
+      uninitialised, splashScreen, menu, playing, exiting
     };
+    static void setState(State s);
 
 
 
@@ -19,6 +25,7 @@ private:
     static sf::RenderWindow _window;
     static sf::Clock _clock;
     static State _state;
+    static std::map<State, gameState*> _stateInstances;
 };
 
 #endif 
