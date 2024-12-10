@@ -14,4 +14,4 @@ public:
     sf::Font font;
     sf::Text text;
 };
-#endif //GAME_SPLASHSCREEN_STATE_H
+#endif 

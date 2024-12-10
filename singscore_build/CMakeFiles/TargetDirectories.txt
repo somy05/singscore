@@ -1,3 +1,0 @@
-/Users/somto/Desktop/singscore/singscore_build/CMakeFiles/SingScore.dir
-/Users/somto/Desktop/singscore/singscore_build/CMakeFiles/edit_cache.dir
-/Users/somto/Desktop/singscore/singscore_build/CMakeFiles/rebuild_cache.dir

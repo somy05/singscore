@@ -56,5 +56,6 @@
         "algorithm": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
-    "cmake.sourceDirectory": "/Users/somto/Desktop/singscore/src"
+    "cmake.sourceDirectory": "/Users/somto/Desktop/singscore/src",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++"
 }

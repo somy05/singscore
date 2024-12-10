@@ -1,1 +1,3 @@
-clang++ main.cpp $(pkg-config --libs --cflags sfml-window sfml-system sfml-graphics) -o main
+clang++ main.cpp Game.cpp states/splashState.cpp states/playingState.cpp states/menuState.cpp states/gameState.cpp  $(pkg-config --libs --cflags sfml-window sfml-system sfml-graphics) -o main
+
+

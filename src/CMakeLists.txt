@@ -15,10 +15,20 @@ include_directories(${SFML_INCLUDE_DIR})
 link_directories(${SFML_LIB_DIR})
 
 # Specify source files
-set(SOURCE_FILES main.cpp Game.cpp gameState.h gameState.cpp)
+set(SOURCE_FILES main.cpp Game.cpp states/gameState.cpp states/menuState.cpp states/playingState.cpp states/splashState.cpp)
+
 
 # Create the executable from source files
 add_executable(SingScore ${SOURCE_FILES})
 
 # Link the required SFML libraries
 target_link_libraries(SingScore sfml-graphics sfml-window sfml-system)
+
+# Copy assets to build directory
+set(ASSETS_SOURCE_DIR "${CMAKE_SOURCE_DIR}/assets")
+if(EXISTS ${ASSETS_SOURCE_DIR})
+    message(STATUS "Copying assets from: ${ASSETS_SOURCE_DIR}")
+    file(COPY ${ASSETS_SOURCE_DIR} DESTINATION ${CMAKE_BINARY_DIR})
+else()
+    message(FATAL_ERROR "Assets directory not found at: ${ASSETS_SOURCE_DIR}")
+endif()

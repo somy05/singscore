@@ -16,4 +16,4 @@ private:
   sf::Sprite _exitSprite;
 
 };
-#endif //GAME_MENUSCREEN_STATE_H
+#endif 

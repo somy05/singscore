@@ -5,7 +5,6 @@
 void splashState::init(){
     if (!font.loadFromFile("assets/gamefont.ttf")){
     std::cout << "Error while loading assets " << std::endl;
-
     return;
 }
 text.setFont(font);
