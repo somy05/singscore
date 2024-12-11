@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include "states/gameState.h"
 #include "states/playingState.h"
 #include "states/menuState.h"

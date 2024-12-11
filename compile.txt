@@ -1,3 +1,12 @@
-clang++ main.cpp Game.cpp states/splashState.cpp states/playingState.cpp states/menuState.cpp states/gameState.cpp  $(pkg-config --libs --cflags sfml-window sfml-system sfml-graphics) -o main
+clang++ -std=c++11 main.cpp Game.cpp states/splashState.cpp states/playingState.cpp \
+states/menuState.cpp states/gameState.cpp audioInput.cpp \
+$(pkg-config --libs --cflags sfml-window sfml-system sfml-graphics) \
+-I/opt/homebrew/include \
+-I/usr/local/include \
+-I/opt/homebrew/Cellar/portaudio/19.7.0/include \
+-L/opt/homebrew/lib \
+-L/usr/local/lib \
+-lportaudio \
+-o main
 
 
