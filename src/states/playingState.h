@@ -3,6 +3,7 @@
 
 #include "gameState.h"
 #include "../audioInput.h"
+#include "../audioOutput.h"
 
 
 
@@ -17,6 +18,7 @@ public:
   sf::Text text2;
   sf::Font font2;
   audioInput audio;
+  audioOutput music;
 
 
 };

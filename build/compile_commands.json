@@ -1,37 +1,37 @@
 [
 {
   "directory": "/Users/somto/Desktop/singscore/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/SingScore.dir/main.cpp.o -c /Users/somto/Desktop/singscore/src/main.cpp",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/SingScore.dir/main.cpp.o -c /Users/somto/Desktop/singscore/src/main.cpp",
   "file": "/Users/somto/Desktop/singscore/src/main.cpp",
   "output": "CMakeFiles/SingScore.dir/main.cpp.o"
 },
 {
   "directory": "/Users/somto/Desktop/singscore/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/SingScore.dir/Game.cpp.o -c /Users/somto/Desktop/singscore/src/Game.cpp",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/SingScore.dir/Game.cpp.o -c /Users/somto/Desktop/singscore/src/Game.cpp",
   "file": "/Users/somto/Desktop/singscore/src/Game.cpp",
   "output": "CMakeFiles/SingScore.dir/Game.cpp.o"
 },
 {
   "directory": "/Users/somto/Desktop/singscore/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/SingScore.dir/states/gameState.cpp.o -c /Users/somto/Desktop/singscore/src/states/gameState.cpp",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/SingScore.dir/states/gameState.cpp.o -c /Users/somto/Desktop/singscore/src/states/gameState.cpp",
   "file": "/Users/somto/Desktop/singscore/src/states/gameState.cpp",
   "output": "CMakeFiles/SingScore.dir/states/gameState.cpp.o"
 },
 {
   "directory": "/Users/somto/Desktop/singscore/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/SingScore.dir/states/menuState.cpp.o -c /Users/somto/Desktop/singscore/src/states/menuState.cpp",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/SingScore.dir/states/menuState.cpp.o -c /Users/somto/Desktop/singscore/src/states/menuState.cpp",
   "file": "/Users/somto/Desktop/singscore/src/states/menuState.cpp",
   "output": "CMakeFiles/SingScore.dir/states/menuState.cpp.o"
 },
 {
   "directory": "/Users/somto/Desktop/singscore/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/SingScore.dir/states/playingState.cpp.o -c /Users/somto/Desktop/singscore/src/states/playingState.cpp",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/SingScore.dir/states/playingState.cpp.o -c /Users/somto/Desktop/singscore/src/states/playingState.cpp",
   "file": "/Users/somto/Desktop/singscore/src/states/playingState.cpp",
   "output": "CMakeFiles/SingScore.dir/states/playingState.cpp.o"
 },
 {
   "directory": "/Users/somto/Desktop/singscore/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/SingScore.dir/states/splashState.cpp.o -c /Users/somto/Desktop/singscore/src/states/splashState.cpp",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/SingScore.dir/states/splashState.cpp.o -c /Users/somto/Desktop/singscore/src/states/splashState.cpp",
   "file": "/Users/somto/Desktop/singscore/src/states/splashState.cpp",
   "output": "CMakeFiles/SingScore.dir/states/splashState.cpp.o"
 }
