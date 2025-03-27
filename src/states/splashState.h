@@ -4,7 +4,14 @@
 #include "../Game.h"
 #include <iostream>
 class splashState : public gameState {
+
+  
 public:
+  splashState()
+  : text(font),
+    font()
+  
+  {}
   void init() override;
   void handleInput(sf::Event *event) override;
   void update(float timeElapsed) override;

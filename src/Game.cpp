@@ -5,10 +5,10 @@ sf::Clock Game::_clock;
 Game::State Game::_state = uninitialised;
 std::map<Game::State, gameState *> Game::_stateInstances;
 
-//initialise the game window and the game states
+
 void Game::start() {
     if (_state != uninitialised) return;
-    _window.create(sf::VideoMode(Game::SCREEN_WIDTH, Game::SCREEN_HEIGHT, 32), "SingScore", sf::Style::Default);
+    _window.create(sf::VideoMode({Game::SCREEN_WIDTH, Game::SCREEN_HEIGHT}), "SingScore", sf::Style::Default);
     _window.setFramerateLimit(60);
     _stateInstances[splashScreen] = new splashState();
     _stateInstances[splashScreen]->init();
@@ -33,10 +33,9 @@ void Game::gameLoop() {
         gameState *currentState = _stateInstances[_state];
 
       
-        sf::Event event;
-        while (_window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed) {_state = exiting;}
-            currentState->handleInput(&event);
+        while (auto event = _window.pollEvent()) {
+            if (event->is<sf::Event::Closed>()) {_state = exiting;}
+            currentState->handleInput(&(*event));
         }
 
         
@@ -50,5 +49,8 @@ void Game::gameLoop() {
 
 
 }
-//changes current state
-void Game::setState(Game::State s) {_state = s;}
+
+void Game::setState(Game::State s) {_state = s;
+    std::cout << "Current state: " << s << std::endl;
+
+}

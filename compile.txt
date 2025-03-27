@@ -1,5 +1,5 @@
-clang++ -std=c++11 main.cpp Game.cpp states/splashState.cpp states/playingState.cpp \
-states/menuState.cpp states/gameState.cpp audioInput.cpp \
+#!/bin/sh
+clang++ -std=c++20 src/main.cpp src/Game.cpp src/states/splashState.cpp src/states/playingState.cpp src/states/menuState.cpp src/states/gameState.cpp src/audioInput.cpp src/audioOutput.cpp \
 $(pkg-config --libs --cflags sfml-window sfml-system sfml-graphics) \
 -I/opt/homebrew/include \
 -I/usr/local/include \
@@ -7,6 +7,7 @@ $(pkg-config --libs --cflags sfml-window sfml-system sfml-graphics) \
 -L/opt/homebrew/lib \
 -L/usr/local/lib \
 -lportaudio \
+-lsfml-audio \
 -o main
 
 

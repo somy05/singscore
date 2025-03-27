@@ -4,11 +4,18 @@
 #include "gameState.h"
 #include "../audioInput.h"
 #include "../audioOutput.h"
+#include "../Game.h"
 
 
 
 class playingState : public gameState {
 public:
+  playingState() 
+  : text2(font2),
+   font2(),
+   audio(),
+   music()
+  {}
   void init() override;
   void handleInput(sf::Event *event) override;
   void update(float timeElapsed) override;

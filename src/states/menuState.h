@@ -5,6 +5,10 @@
 #include <iostream>
 class menuState : public gameState {
 public:
+  menuState()
+  :  _playSprite(_playTexture),
+    _exitSprite(_exitTexture)
+  {}
   void init() override;
   void handleInput(sf::Event *event) override;
   void update(float timeElapsed) override;
@@ -14,6 +18,7 @@ private:
   sf::Sprite _playSprite;
   sf::Texture _exitTexture;
   sf::Sprite _exitSprite;
+  bool playMusic;
 
 };
 #endif 

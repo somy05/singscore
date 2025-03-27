@@ -7,6 +7,7 @@
 #include "states/playingState.h"
 #include "states/menuState.h"
 #include "states/splashState.h"
+#include <map>
 
 
 class Game {

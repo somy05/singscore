@@ -56,7 +56,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+					"fragment" : "-g -std=gnu++14 -arch arm64"
 				}
 			],
 			"includes" : 
