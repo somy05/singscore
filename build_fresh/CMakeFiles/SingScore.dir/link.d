@@ -15,6 +15,7 @@ SingScore: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libsfml-audio.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libsfml-system.so \
   /usr/lib/x86_64-linux-gnu/libportaudio.so \
+  /usr/lib/x86_64-linux-gnu/libfftw3.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -43,7 +44,6 @@ SingScore: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o \
   /lib/x86_64-linux-gnu/libstb.so.0 \
   /lib/x86_64-linux-gnu/libfreetype.so.6 \
-  /lib/x86_64-linux-gnu/libm.so.6 \
   /lib/x86_64-linux-gnu/libX11.so.6 \
   /lib/x86_64-linux-gnu/libXrandr.so.2 \
   /lib/x86_64-linux-gnu/libXcursor.so.1 \
@@ -106,6 +106,8 @@ CMakeFiles/SingScore.dir/states/splashState.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libportaudio.so:
 
+/usr/lib/x86_64-linux-gnu/libfftw3.so:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so:
@@ -161,8 +163,6 @@ CMakeFiles/SingScore.dir/states/splashState.cpp.o:
 /lib/x86_64-linux-gnu/libstb.so.0:
 
 /lib/x86_64-linux-gnu/libfreetype.so.6:
-
-/lib/x86_64-linux-gnu/libm.so.6:
 
 /lib/x86_64-linux-gnu/libX11.so.6:
 

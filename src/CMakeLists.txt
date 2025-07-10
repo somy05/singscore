@@ -18,8 +18,16 @@ if(NOT PORTAUDIO_INCLUDE_DIR OR NOT PORTAUDIO_LIBRARY)
     message(FATAL_ERROR "PortAudio not found")
 endif()
 
-# Add SFML and PortAudio include directories
-include_directories(${SFML_INCLUDE_DIRS} ${PORTAUDIO_INCLUDE_DIR})
+# Find FFTW3
+find_path(FFTW3_INCLUDE_DIR fftw3.h)
+find_library(FFTW3_LIBRARY fftw3)
+
+if(NOT FFTW3_INCLUDE_DIR OR NOT FFTW3_LIBRARY)
+    message(FATAL_ERROR "FFTW3 not found")
+endif()
+
+# Add SFML, PortAudio and FFTW3 include directories
+include_directories(${SFML_INCLUDE_DIRS} ${PORTAUDIO_INCLUDE_DIR} ${FFTW3_INCLUDE_DIR})
 
 # Specify source files
 set(SOURCE_FILES main.cpp Game.cpp audioInput.cpp audioOutput.cpp states/gameState.cpp states/menuState.cpp states/playingState.cpp states/splashState.cpp)
@@ -28,8 +36,8 @@ set(SOURCE_FILES main.cpp Game.cpp audioInput.cpp audioOutput.cpp states/gameSta
 # Create the executable from source files
 add_executable(SingScore ${SOURCE_FILES})
 
-# Link the required SFML libraries and PortAudio
-target_link_libraries(SingScore ${SFML_LIBRARIES} ${PORTAUDIO_LIBRARY})
+# Link the required SFML libraries, PortAudio and FFTW3
+target_link_libraries(SingScore ${SFML_LIBRARIES} ${PORTAUDIO_LIBRARY} ${FFTW3_LIBRARY})
 
 # Copy assets to build directory
 set(ASSETS_SOURCE_DIR "${CMAKE_SOURCE_DIR}/assets")

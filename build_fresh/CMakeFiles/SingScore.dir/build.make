@@ -209,6 +209,7 @@ SingScore: CMakeFiles/SingScore.dir/states/splashState.cpp.o
 SingScore: CMakeFiles/SingScore.dir/build.make
 SingScore: CMakeFiles/SingScore.dir/compiler_depend.ts
 SingScore: /usr/lib/x86_64-linux-gnu/libportaudio.so
+SingScore: /usr/lib/x86_64-linux-gnu/libfftw3.so
 SingScore: CMakeFiles/SingScore.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/work/singscore/singscore/build_fresh/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable SingScore"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SingScore.dir/link.txt --verbose=$(VERBOSE)

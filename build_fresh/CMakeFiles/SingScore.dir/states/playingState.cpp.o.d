@@ -234,6 +234,18 @@ CMakeFiles/SingScore.dir/states/playingState.cpp.o: \
  /home/runner/work/singscore/singscore/src/states/../audioInput.h \
  /usr/include/portaudio.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/istream /usr/include/c++/13/bits/istream.tcc \
+ /usr/include/c++/13/complex /usr/include/c++/13/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
+ /usr/include/fftw3.h \
  /home/runner/work/singscore/singscore/src/states/../states/gameState.h \
  /home/runner/work/singscore/singscore/src/states/../audioOutput.h \
  /usr/include/SFML/Audio.hpp /usr/include/SFML/Audio/InputSoundFile.hpp \
@@ -258,4 +270,5 @@ CMakeFiles/SingScore.dir/states/playingState.cpp.o: \
  /home/runner/work/singscore/singscore/src/states/../states/menuState.h \
  /home/runner/work/singscore/singscore/src/states/../states/gameState.h \
  /home/runner/work/singscore/singscore/src/states/../states/../Game.h \
- /home/runner/work/singscore/singscore/src/states/../states/splashState.h
+ /home/runner/work/singscore/singscore/src/states/../states/splashState.h \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/bits/quoted_string.h
