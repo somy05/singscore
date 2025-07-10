@@ -11,8 +11,8 @@
 class playingState : public gameState {
 public:
   playingState() 
-  : text2(font2),
-   font2(),
+  : font2(),
+   text2(),
    audio(),
    music()
   {}

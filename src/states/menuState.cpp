@@ -15,8 +15,8 @@ void menuState::init(){
 
 }
 void menuState::handleInput(sf::Event* event) {
-  if (const auto* mouseclick = event->getIf<sf::Event::MouseButtonPressed>()) {
-    sf::Vector2f mousePos = {static_cast<float>(mouseclick->position.x), static_cast<float>(mouseclick->position.y)};
+  if (event->type == sf::Event::MouseButtonPressed) {
+    sf::Vector2f mousePos = {static_cast<float>(event->mouseButton.x), static_cast<float>(event->mouseButton.y)};
 
       if (_playSprite.getGlobalBounds().contains(mousePos)) {
           Game::setState(Game::playing);

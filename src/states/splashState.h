@@ -8,8 +8,8 @@ class splashState : public gameState {
   
 public:
   splashState()
-  : text(font),
-    font()
+  : font(),
+    text()
   
   {}
   void init() override;

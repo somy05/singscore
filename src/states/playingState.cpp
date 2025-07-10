@@ -4,7 +4,7 @@ void playingState::init(){
 audio.initPortAudio();
 static audioOutput music;
 
-if (!font2.openFromFile("assets/gamefont.ttf")){
+if (!font2.loadFromFile("assets/gamefont.ttf")){
     std::cout << "Error while loading assets " << std::endl;
     return;
 }

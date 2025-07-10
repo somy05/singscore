@@ -1,0 +1,3 @@
+/home/runner/work/singscore/singscore/build_fresh/CMakeFiles/SingScore.dir
+/home/runner/work/singscore/singscore/build_fresh/CMakeFiles/edit_cache.dir
+/home/runner/work/singscore/singscore/build_fresh/CMakeFiles/rebuild_cache.dir
