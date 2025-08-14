@@ -12,7 +12,7 @@ class playingState : public gameState {
 public:
   playingState() 
   : font2(),
-   text2(),
+   text2(font2),
    audio(),
    music(),
    gameStarted(false),
@@ -27,8 +27,8 @@ public:
   void draw(sf::RenderWindow *window) override;
 
 private:
-  sf::Text text2;
   sf::Font font2;
+  sf::Text text2;
   audioInput audio;
   audioOutput music;
   

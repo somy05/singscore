@@ -6,7 +6,7 @@
 void playingState::init(){
     audio.initPortAudio();
     
-    if (!font2.loadFromFile("assets/gamefont.ttf")){
+    if (!font2.openFromFile("assets/gamefont.ttf")){
         std::cout << "Error while loading font assets " << std::endl;
         return;
     }
@@ -42,12 +42,11 @@ void playingState::handleInput(sf::Event *event) {
         Game::setState(Game::menu);
     }
     
-    if (event->type == sf::Event::KeyPressed) {
-        if (event->key.code == sf::Keyboard::Space && !gameStarted) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)) {
             startGame();
         }
     }
-}
+
 
 void playingState::update(float timeElapsed) { 
     if (!gameStarted) {
@@ -55,7 +54,7 @@ void playingState::update(float timeElapsed) {
     }
     
     // Check if music is still playing
-    if (!music.getIsPlaying() && music.getStatus() != sf::Music::Paused) {
+    if (!music.getIsPlaying() && music.getStatus() != sf::SoundSource::Status::Paused) {
         // Song finished
         audio.stopRecording();
         gameStarted = false;

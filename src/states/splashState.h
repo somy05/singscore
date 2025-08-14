@@ -9,7 +9,7 @@ class splashState : public gameState {
 public:
   splashState()
   : font(),
-    text()
+    text(font)
   
   {}
   void init() override;

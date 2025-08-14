@@ -34,7 +34,7 @@ void audioOutput::resume()
 
 bool audioOutput::getIsPlaying() const
 {
-    return music.getStatus() == sf::Music::Playing;
+    return music.getStatus() == sf::SoundStream::Status::Playing;
 }
 
 float audioOutput::getPlayingOffset() const

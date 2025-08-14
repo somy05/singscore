@@ -1,22 +1,30 @@
 #include "menuState.h"
 
 void menuState::init(){
-    if (!_playTexture.loadFromFile("assets/play.png") 
-     || !_exitTexture.loadFromFile("assets/exit.png")) {
-    std::cout << "Error while loading assets" << std::endl;
+    
+      if (!_playTexture.loadFromFile("assets/play.png")) {
+        std::cout << "Error loading play.png" << std::endl;
+    }
+    if (!_exitTexture.loadFromFile("assets/exit.png")) {
+        std::cout << "Error loading exit.png" << std::endl;
+    }
+   
+    //ADD TRUE PARAMETER TO .setTexture
+    _playSprite.setTexture(_playTexture, true);
+    _exitSprite.setTexture(_exitTexture, true);
+
+    _playSprite.setPosition({600, 400});
+    _exitSprite.setPosition({600, 200});
+    std::cout << "Menu state initialized" << std::endl;
+  
     return;
   }
-  _playSprite.setTexture(_playTexture);
-  _exitSprite.setTexture(_exitTexture);
-  _playSprite.setPosition({450, 500});
-  _exitSprite.setPosition({450, 600});
-  std::cout << "Menu state initialized" << std::endl;
 
 
-}
+
 void menuState::handleInput(sf::Event* event) {
-  if (event->type == sf::Event::MouseButtonPressed) {
-    sf::Vector2f mousePos = {static_cast<float>(event->mouseButton.x), static_cast<float>(event->mouseButton.y)};
+  if (const auto* mouseclick = event->getIf<sf::Event::MouseButtonPressed>()) {
+    sf::Vector2f mousePos = {static_cast<float>(mouseclick->position.x), static_cast<float>(mouseclick->position.y)};
 
       if (_playSprite.getGlobalBounds().contains(mousePos)) {
           Game::setState(Game::playing);
@@ -34,9 +42,9 @@ void menuState::update(float timeElapsed) {
 void menuState::draw(sf::RenderWindow *window) { 
 
 window->draw(_playSprite);
-std::cout << "Drawing play sprite" << std::endl;
+
 window->draw(_exitSprite);
-std::cout << "Drawing exit sprite" << std::endl;
+
 
 
 }
