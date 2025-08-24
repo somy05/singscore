@@ -32,8 +32,7 @@ void Game::gameLoop() {
         _window.clear(sf::Color(255, 255, 255));
         gameState *currentState = _stateInstances[_state];
 
-      
-        while (auto event = _window.pollEvent()) {
+      while (auto event = _window.pollEvent()) {
             if (event->is<sf::Event::Closed>()) {_state = exiting;}
             currentState->handleInput(&(*event));
         }

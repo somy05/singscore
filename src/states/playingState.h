@@ -11,23 +11,38 @@
 class playingState : public gameState {
 public:
   playingState() 
-  : text2(font2),
-   font2(),
+  : font2(),
+   text2(font2),
    audio(),
-   music()
+   music(),
+   gameStarted(false),
+   userPitch(0.0),
+   targetPitch(0.0),
+   score(0)
   {}
+  
   void init() override;
   void handleInput(sf::Event *event) override;
   void update(float timeElapsed) override;
   void draw(sf::RenderWindow *window) override;
 
-public:
-  sf::Text text2;
+private:
   sf::Font font2;
+  sf::Text text2;
   audioInput audio;
   audioOutput music;
-
-
+  
+  // Game state variables
+  bool gameStarted;
+  double userPitch;
+  double targetPitch;
+  int score;
+  
+  // Helper methods
+  void startGame();
+  void calculateScore();
+  double getPitchAccuracy(double userPitch, double targetPitch);
+  std::string getPitchName(double frequency);
 };
 
 
